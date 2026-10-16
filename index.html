@@ -243,6 +243,134 @@
                             <label>
                                 <input type="checkbox" id="filter-ubs" checked onchange="filterLocations()">
                                 UBS
+                                <label>
+                                <input type="checkbox" id="filter-upa" checked onchange="filterLocations()">
+                                UPA
                             </label>
-                            <label>
-                                <input type="checkbox
+                             </div>
+                    </div>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+         3               placeholder="Digite o endereço ou bairro em São Paulo..." 
+                        class="search-input"
+                        
+                    >
+        
+                    
+                </div>
+
+                <div id="map" class="map-container"></div>
+
+                <div class="results-container">
+                    <h3>Unidades Próximas</h3>
+                    <div id="resultsList" class="results-list">
+                        <p class="no-results">Clique em "Usar Minha Localização" para encontrar as unidades próximas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dicas de Saúde -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2>Dicas de Saúde Importantes</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon" style="background-color: #e74c3c;">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3>Higiene Pessoal</h3>
+                    <p>Lave as mãos frequentemente, especialmente antes de comer e após usar o banheiro. Use álcool gel quando necessário.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon" style="background-color: #3498db;">
+                        <i class="fas fa-apple"></i>
+                    </div>
+                    <h3>Alimentação Saudável</h3>
+                    <p>Consuma alimentos naturais, frutas e vegetais. Evite alimentos ultra-processados e reduza o consumo de açúcar.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon" style="background-color: #2ecc71;">
+                        <i class="fas fa-person-walking"></i>
+                    </div>
+                    <h3>Atividade Física</h3>
+                    <p>Pratique pelo menos 150 minutos de atividade física moderada por semana. Caminhe, dance ou pratique seu esporte favorito.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon" style="background-color: #9b59b6;">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Sono de Qualidade</h3>
+                    <p>Durma de 7 a 8 horas por noite. Mantenha uma rotina regular de sono para melhor saúde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>Central de Saúde de SP: (11) 3218-4300</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>saudedesp@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <input 
+                        type="text" 
+                        placeholder="Seu Nome" 
+                        required
+                    >
+                    <input 
+                        type="email" 
+                        placeholder="Seu Email" 
+                        required
+                    >
+                    <textarea 
+                        placeholder="Sua Mensagem" 
+                        rows="5" 
+                        required
+                    ></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Saúde SP - Localizador de UBS e UPA. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> para a saúde da população paulista</p>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-E5tT8pR6h1t5n5n5n5n5n5n5n5&libraries=places,geometry"></script>
+    <script src="teste.js"></script>
+</body>
+</html>
